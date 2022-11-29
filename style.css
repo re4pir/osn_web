@@ -1,5 +1,61 @@
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("GothamPro-light"), url(/assets/fonts/gothampro_light.ttf);
+  font-display: swap;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("GothamPro"), url(/assets/fonts/gothampro_medium.ttf);
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Gotham Pro";
+  src: local("GothamPro-bold"), url(/assets/fonts/gothampro_bold.ttf);
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-light"), url(/assets/fonts/Montserrat-Light.ttf);
+  font-display: swap;
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), url(/assets/fonts/Montserrat-Medium.ttf);
+  font-display: swap;
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-bold"), url(/assets/fonts/Montserrat-Bold.ttf);
+  font-display: swap;
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat-semibold"), url(/assets/fonts/Montserrat-SemiBold.ttf);
+  font-display: swap;
+  font-weight: 600;
+  font-style: normal;
+}
+
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -79,7 +135,7 @@ body {
 
 .header__logo {
   padding-top: 5px;
-  margin-right: auto;
+  margin-right: 153px;
 }
 
 .header__nav {
@@ -87,15 +143,15 @@ body {
 }
 
 .nav-first {
-  margin-right: 559px;
+  margin-right: 557px;
 }
 
 .nav-first__item:not(:last-child) {
-  margin-right: 60px;
+  margin-right: 60.5px;
 }
 
 .nav-second {
-  margin-right: 43px;
+  margin-right: 40.5px;
   color: #8b8b8b;
 }
 
@@ -106,7 +162,7 @@ body {
 .nav-first__link {
   font-family: "Montserrat";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
 }
@@ -123,23 +179,24 @@ body {
 }
 
 .header__btn {
+  font-family: "Montserrat";
   font-weight: 600;
   font-size: 14px;
   line-height: 20px;
   text-align: center;
   color: #141414;
-  padding: 14px 34px;
+  padding: 14px 30px;
   border: 1px solid #141414;
   border-radius: 100px;
   transition: background-color 0.3s ease-in-out;
 }
 
 .header__btn:hover {
-  background-color: orange;
+  background-color: #25ff6e25;
 }
 
 .header__btn:active {
-  background-color: green;
+  background-color: #9affe1;
 }
 
 .main {
@@ -178,14 +235,14 @@ body {
   position: relative;
 }
 .section-template__template {
-  margin-top: 15px;
-  padding-bottom: 43.5px;
+  margin-top: 12px;
+  padding-bottom: 46.5px;
 }
 
 .section-template__template-text {
-  font-family: "Gotham Pro Medium";
-  font-weight: 600;
-  font-size: 96px;
+  font-family: "Gotham Pro";
+  font-weight: 700;
+  font-size: 94.5px;
   line-height: 92px;
   text-align: left;
   width: 626px;
@@ -209,7 +266,7 @@ body {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 400;
-  font-size: 24px;
+  font-size: 24.43px;
   line-height: 20px;
   color: #ffffff;
 }
@@ -400,7 +457,7 @@ body {
   padding: 0px 0;
   width: 1920px;
   height: 1045px;
-  background: no-repeat 50% 32.5% url(/assets/img/slider_fake.svg), #f7f7f8;
+  background: #f7f7f8;
 }
 
 .section-cost__container {
@@ -417,25 +474,31 @@ body {
 
 .section-cost__template {
   font-family: "Gotham Pro";
-  font-style: normal;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 47.35px;
   line-height: 38px;
   padding-left: 80px;
-  padding-top: 118px;
+  padding-top: 116px;
+  padding-bottom: 94px;
 }
 
 .section-cost__kits {
-  padding-top: 92px;
   padding-left: 147px;
+  margin-bottom: 25px;
 }
 
-.section-cost__kits-kit1 {
-  padding-right: 157px;
+.section-cost__kits-kit:first-child {
+  margin-right: 157px;
+  text-align: left;
 }
 
-.section-cost__kits-kit2 {
-  padding-right: 161px;
+.section-cost__kits-kit:nth-child(2) {
+  margin-right: 161px;
+  text-align: left;
+}
+
+.section-cost__kits-kit:last-child {
+  text-align: left;
 }
 
 .section-cost__kits-kit-text {
@@ -459,8 +522,35 @@ body {
   color: #8b8b8b;
 }
 
+.section-cost__slider {
+  -webkit-appearance: none;
+  outline: none;
+  display: flex;
+  position: relative;
+  margin-bottom: 31px;
+  width: 1290px;
+  height: 8px;
+  background: transparent;
+  background-clip: padding-box;
+  border-bottom: 1px solid gray;
+  margin-left: 80px;
+  margin-bottom: 80px;
+}
+
+.section-cost__slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+
+  align-self: center;
+  width: 410px;
+  height: 8px;
+
+  background: #fb4516;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
 .section-cost__list {
-  padding-top: 113px;
   gap: 30px;
 }
 
@@ -474,6 +564,7 @@ body {
   background: #ffffff;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.08);
   border-radius: 24px;
+  margin-bottom: 75px;
 }
 
 .section-cost__item:first-child {
@@ -509,7 +600,7 @@ body {
 .section-cost__item-title {
   font-family: "Gotham Pro";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 32px;
   line-height: 32px;
   margin-bottom: 24px;
@@ -555,7 +646,7 @@ body {
 .section-cost__middle {
   padding: 14px 25px 10px 31px;
   margin-bottom: 26px;
-  background: #f7f5ff;
+  background: no-repeat 41.4% 62% url(/assets/img/Line\ 83.svg), #f7f5ff;
   border-radius: 100px;
 }
 
@@ -584,8 +675,9 @@ body {
 }
 
 .section-cost__button {
-  padding-top: 80px;
+  margin-top: 5px;
   padding-left: 575px;
+  margin-right: 444.5px;
 }
 
 .section-cost__button-text {
@@ -604,8 +696,7 @@ body {
   transition: all 0.3s ease-in-out;
 }
 .section-cost__nav-button {
-  padding-left: 445px;
-  padding-top: 75px;
+
 }
 .section-cost__nav-button1 {
   background-color: #ffffff;
@@ -614,7 +705,8 @@ body {
   border-radius: 90px;
   background-image: url(/assets/img/prev.svg);
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: 49% 50%;
+  margin-right: 6px;
 }
 .section-cost__nav-button2 {
   background-color: #ffffff;
@@ -623,8 +715,7 @@ body {
   border-radius: 90px;
   background-image: url(/assets/img/Next.svg);
   background-repeat: no-repeat;
-  background-position: center center;
-  margin-left: 5.5px;
+  background-position: 52% 50%;
 }
 
 .section-cost__context {
@@ -654,7 +745,7 @@ body {
   font-family: "Gotham Pro";
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 35.65px;
   line-height: 32px;
   color: #141414;
   padding-left: 258px;
@@ -1084,7 +1175,7 @@ body {
   width: 1310px;
 }
 
-.footer__context{
+.footer__context {
   margin-top: 60px;
   margin-left: 90px;
 }
@@ -1110,21 +1201,21 @@ body {
   margin-right: 115px;
 }
 
-.footer__left-item:first-child{
-  background:no-repeat 50% 50% url(/assets/img/facebook.svg);
+.footer__left-item:first-child {
+  background: no-repeat 50% 50% url(/assets/img/facebook.svg);
   padding-right: 32px;
   padding-top: 32px;
   margin-right: 12px;
 }
 
-.footer__left-item:nth-child(2){
-  background:no-repeat 50% 50% url(/assets/img/vk.svg);
+.footer__left-item:nth-child(2) {
+  background: no-repeat 50% 50% url(/assets/img/vk.svg);
   padding-right: 32px;
   margin-right: 12px;
 }
 
-.footer__left-item:last-child{
-  background:no-repeat url(/assets/img/inst.svg);
+.footer__left-item:last-child {
+  background: no-repeat url(/assets/img/inst.svg);
   padding-right: 32px;
 }
 
@@ -1146,13 +1237,13 @@ body {
   color: #8b8b8b;
 }
 
-.footer__right-list-item:first-child{
+.footer__right-list-item:first-child {
   background: no-repeat 0% 0% url(/assets/img/App\ Store.png);
   padding-right: 140px;
   margin-right: 8px;
 }
 
-.footer__right-list-item:last-child{
+.footer__right-list-item:last-child {
   background: no-repeat 0% 0% url(/assets/img/Google\ Play.png);
   padding-right: 140px;
   margin-right: 20px;

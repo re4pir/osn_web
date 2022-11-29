@@ -23,10 +23,10 @@
               <a href="#" class="nav-first__link">О&nbsp;нас</a>
             </li>
             <li class="nav-first__item">
-              <a href="#" class="nav-first__link">Enjoy</a>
+              <a href="#enjoy" class="nav-first__link">Enjoy</a>
             </li>
             <li class="nav-first__item">
-              <a href="#" class="nav-first__link">Программы и&nbsp;цены</a>
+              <a href="#cost" class="nav-first__link">Программы и&nbsp;цены</a>
             </li>
             <li class="nav-first__item">
               <a href="#" class="nav-first__link">Филиалы</a>
@@ -34,16 +34,16 @@
           </ul>
           <ul class="nav-second list-reset flex">
             <li class="nav-second__item">
-              <a href="#" class="nav-second__link">Летний лагерь</a>
+              <a href="#summer" class="nav-second__link">Летний лагерь</a>
             </li>
             <li class="nav-second__item">
               <a href="#" class="nav-second__link">Тестирование</a>
             </li>
           </ul>
         </nav>
-        <div class="button__container flex">
+        <a href="#ending" class="button__container flex">
           <button class="header__btn btn-reset">Бесплатный урок</button>
-        </div>
+        </a>
       </div>
     </div>
   </header>
@@ -86,7 +86,7 @@
         </div>
       </div>
     </section>
-    <section class="section-second">
+    <section class="section-second" id="enjoy">
       <div class="section-second__container container">
         <div class="section-second__context flex">
           <div class="section-second__steve">
@@ -111,34 +111,35 @@
         </div>
       </div>
     </section>
-    <section class="section-cost">
+    <section class="section-cost" id="cost">
       <div class="section-cost__container container">
         <div class="section-cost__context flex">
           <div class="section-cost__main">
             <h2 class="section-cost__template">Программы и цены</h2>
             <div class="section-cost__kits flex">
-              <div class="flex section-cost__kits-kit1">
+              <button class="flex btn-reset section-cost__kits-kit" id="1">
                 <img src="/assets/img/StartIco.svg" alt="">
                 <div>
                   <h2 class="section-cost__kits-kit-text">Enjoy «Starter»</h2>
                   <p class="section-cost__kits-kit-undertext">4-6 лет</p>
                 </div>
-              </div>
-              <div class="flex section-cost__kits-kit2">
+              </button>
+              <button class="flex btn-reset section-cost__kits-kit" id="2">
                 <img src="/assets/img/PrimIco.svg" alt="">
                 <div>
                   <h2 class="section-cost__kits-kit-text">Enjoy «Primary»</h2>
                   <p class="section-cost__kits-kit-undertext">6-12 лет</p>
                 </div>
-              </div>
-              <div class="flex section-cost__kits-kit3">
+              </button>
+              <button class="flex btn-reset section-cost__kits-kit" id="3">
                 <img src="/assets/img/EnjIco.svg" alt="">
                 <div>
                   <h2 class="section-cost__kits-kit-text">Enjoy «Junior»</h2>
                   <p class="section-cost__kits-kit-undertext">13 -17 лет</p>
                 </div>
-              </div>
+              </button>
             </div>
+            <input type="range" name="sl" class="section-cost__slider" value="0" id="4">
             <ul class="section-cost__list list-reset flex">
               <li class="section-cost__item flex">
                 <h3 class="section-cost__item-title">8&nbsp;уроков</h3>
@@ -243,10 +244,10 @@
             </li>
             <li class="section-promotions__list-item">
               <p class="section-promotions__list-item-text">Платформа с интерактивными упражнениями с
-                автоматической проверкой ответов и электронным дневником достижений</p>
+                автоматической проверкой&nbsp;ответов&nbsp;и&nbsp;электронным дневником достижений</p>
             </li>
             <li class="section-promotions__list-item">
-              <p class="section-promotions__list-item-text">Cертификат по окончанию обучения</p>
+              <p class="section-promotions__list-item-text">Cертификат&nbsp;по&nbsp;окончанию&nbsp;обучения</p>
             </li>
             <li class="section-promotions__list-item">
               <p class="section-promotions__list-item-text">Налоговый вычет 13%</p>
@@ -285,7 +286,7 @@
               разговорные нвыки</p>
           </li>
         </ul>
-        <div class="section-study__banner">
+        <div class="section-study__banner" id="summer">
           <picture class="section-study__banner-plane">
             <img src="/assets/img/airplane 1.png" alt="">
           </picture>
@@ -298,7 +299,7 @@
         </div>
       </div>
     </section>
-    <section class="section-ending">
+    <section class="section-ending" id="ending">
       <div class="section-ending__container">
         <div class="section-ending__context flex">
           <div class="section-ending__main">
